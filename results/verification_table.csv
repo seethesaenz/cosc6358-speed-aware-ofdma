@@ -1,0 +1,10 @@
+id,case,expected,observed,result,explanation
+T1,"Water-filling, CNR [10, 2], P = 1 W","[0.7000, 0.3000] W","[0.7000, 0.3000] W",PASS,mu = (1 + 0.1 + 0.5)/2 = 0.8; matches course example
+T2,"Boundary: very weak channel, CNR [10, 0.1]","[1.0000, 0.0000] W","[1.0000, 0.0000] W",PASS,"floor 10 W > water level, so channel 2 is switched off"
+T3,"Static split, K = 3, N = 8","counts [3, 3, 2], 0.125 W each","counts [3, 3, 2], 0.125 W each",PASS,"round-robin over subcarriers, equal power"
+T4,Sum-rate on a 2 x 4 gain matrix,"assign [0, 1, 0, 1]; p [0.3444, 0.3944, 0.2611, 0]","assign [0, 1, 0, 1]; p [0.3444, 0.3944, 0.2611, 0.0000]",PASS,"best user per subcarrier; mu = 0.5944 < 1.667, so subcarrier 4 is off"
+T5,"Outage rule: est. gain 7, true 3 / 15 / 7","delivered [0, 3, 3]; outage [T, F, F]","delivered [0.0000, 3.0000, 3.0000]; outage [True, False, False]",PASS,planned 3 > capacity 2 fails; a better channel still delivers only the planned 3; a tie is not an outage
+T6,"3 dB back-off: est. 7, true 3 / 4","planned 2.1726; delivered [0, 2.1726]","planned 2.1726; delivered [0.0000, 2.1726]",PASS,SNR 7/10^0.3 = 3.508 -> log2(4.508) = 2.1726
+T7,"rho = J0(2 pi f_D tau), tau = 2 ms, 0 / 3 / 120 km/h","[1.0000, 0.9963, -0.2138]","[1.0000, 0.9963, -0.2138]",PASS,"f_D = 0, 9.7, 388.9 Hz at 3.5 GHz"
+T8,Boundary: rho = 1 (no motion) leaves channel unchanged,max |difference| = 0,max |difference| = 0.0e+00,PASS,aging must be the identity when the user does not move
+T9,"Jain index: equal / one user / [2, 1]","[1.0000, 0.2500, 0.9000]","[1.0000, 0.2500, 0.9000]",PASS,(sum r)^2 / (K sum r^2)

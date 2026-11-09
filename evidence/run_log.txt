@@ -1,0 +1,17 @@
+2026-11-07T08:15:38+00:00  START experiment=mp2_pilot config=config/pilot.json sha256[:12]=1a7f533c2a78 SYNTHETIC DATA
+2026-11-07T08:15:38+00:00  wrote data/raw/perfect_csi_seed1.csv rows=3200 rho=1.0 (0.18s)
+2026-11-07T08:15:38+00:00  wrote data/raw/perfect_csi_seed2.csv rows=3200 rho=1.0 (0.17s)
+2026-11-07T08:15:38+00:00  wrote data/raw/perfect_csi_seed3.csv rows=3200 rho=1.0 (0.18s)
+2026-11-07T08:15:39+00:00  wrote data/raw/perfect_csi_seed4.csv rows=3200 rho=1.0 (0.18s)
+2026-11-07T08:15:39+00:00  wrote data/raw/perfect_csi_seed5.csv rows=3200 rho=1.0 (0.20s)
+2026-11-07T08:15:39+00:00  wrote data/raw/pedestrian_3kmh_seed1.csv rows=3200 rho=0.996272 (0.21s)
+2026-11-07T08:15:39+00:00  wrote data/raw/pedestrian_3kmh_seed2.csv rows=3200 rho=0.996272 (0.20s)
+2026-11-07T08:15:39+00:00  wrote data/raw/pedestrian_3kmh_seed3.csv rows=3200 rho=0.996272 (0.24s)
+2026-11-07T08:15:40+00:00  wrote data/raw/pedestrian_3kmh_seed4.csv rows=3200 rho=0.996272 (0.21s)
+2026-11-07T08:15:40+00:00  wrote data/raw/pedestrian_3kmh_seed5.csv rows=3200 rho=0.996272 (0.19s)
+2026-11-07T08:15:40+00:00  wrote data/raw/vehicle_120kmh_seed1.csv rows=3200 rho=-0.213841 (0.18s)
+2026-11-07T08:15:40+00:00  wrote data/raw/vehicle_120kmh_seed2.csv rows=3200 rho=-0.213841 (0.17s)
+2026-11-07T08:15:40+00:00  wrote data/raw/vehicle_120kmh_seed3.csv rows=3200 rho=-0.213841 (0.17s)
+2026-11-07T08:15:40+00:00  wrote data/raw/vehicle_120kmh_seed4.csv rows=3200 rho=-0.213841 (0.17s)
+2026-11-07T08:15:41+00:00  wrote data/raw/vehicle_120kmh_seed5.csv rows=3200 rho=-0.213841 (0.17s)
+2026-11-07T08:15:41+00:00  DONE

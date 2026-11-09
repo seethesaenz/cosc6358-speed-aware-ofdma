@@ -1,0 +1,25 @@
+============================= test session starts ==============================
+platform linux -- Python 3.13.16, pytest-9.2.0, pluggy-1.7.0 -- /usr/bin/python
+cachedir: .pytest_cache
+rootdir: /home/claude/mp2/speedaware-ofdma
+plugins: anyio-4.15.1
+collecting ... collected 16 items
+
+tests/test_hand_checked.py::test_T1_water_filling_course_example PASSED  [  6%]
+tests/test_hand_checked.py::test_T2_water_filling_boundary_weak_channel_switched_off PASSED [ 12%]
+tests/test_hand_checked.py::test_T3_static_split PASSED                  [ 18%]
+tests/test_hand_checked.py::test_T4_sum_rate_assignment_and_power PASSED [ 25%]
+tests/test_hand_checked.py::test_T5_outage_rule PASSED                   [ 31%]
+tests/test_hand_checked.py::test_T6_outage_with_3db_margin PASSED        [ 37%]
+tests/test_hand_checked.py::test_T7_doppler_and_correlation_values PASSED [ 43%]
+tests/test_hand_checked.py::test_T8_aging_boundaries PASSED              [ 50%]
+tests/test_hand_checked.py::test_T9_jain_index PASSED                    [ 56%]
+tests/test_hand_checked.py::test_T10_channel_power_normalization PASSED  [ 62%]
+tests/test_hand_checked.py::test_T11_aging_correlation_matches_j0 PASSED [ 68%]
+tests/test_invariants.py::test_power_budget_and_one_user_per_subcarrier[static] PASSED [ 75%]
+tests/test_invariants.py::test_power_budget_and_one_user_per_subcarrier[sum_rate] PASSED [ 81%]
+tests/test_invariants.py::test_perfect_csi_has_no_outage PASSED          [ 87%]
+tests/test_invariants.py::test_common_random_numbers_and_reproducibility PASSED [ 93%]
+tests/test_invariants.py::test_noise_per_subcarrier PASSED               [100%]
+
+============================== 16 passed in 0.37s ==============================

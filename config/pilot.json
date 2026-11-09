@@ -1,0 +1,49 @@
+{
+  "experiment": "mp2_pilot",
+  "description": "MP2 pilot: two baselines (static, sum_rate), each with rate chosen at the estimated SNR (0 dB margin) or with a fixed 3 dB back-off, under perfect CSI, pedestrian and vehicle speeds. SYNTHETIC data.",
+  "n_users": 4,
+  "n_subcarriers": 64,
+  "bandwidth_hz": 1000000.0,
+  "p_total_w": 1.0,
+  "noise_psd_dbw_hz": -80.0,
+  "fc_hz": 3500000000.0,
+  "n_taps": 6,
+  "pdp_decay_taps": 2.0,
+  "beta_db_range": [
+    0.0,
+    -20.0
+  ],
+  "allocators": [
+    "static",
+    "sum_rate"
+  ],
+  "rate_margins_db": [
+    0.0,
+    3.0
+  ],
+  "conditions": [
+    {
+      "name": "perfect_csi",
+      "speed_kmh": 3,
+      "tau_ms": 0
+    },
+    {
+      "name": "pedestrian_3kmh",
+      "speed_kmh": 3,
+      "tau_ms": 2
+    },
+    {
+      "name": "vehicle_120kmh",
+      "speed_kmh": 120,
+      "tau_ms": 2
+    }
+  ],
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "realizations_per_seed": 200
+}
